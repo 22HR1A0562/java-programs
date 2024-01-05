@@ -2,18 +2,18 @@ class A
 {
 A()
 {
-System.out.println("Hello a from default constructor");
+this(5);
+System.out.println("Hello a");
 }
 A(int x)
 {
-this();
 System.out.println(x);
 }
 }
-class Test
+class B
 {
 public static void main(String args[])
 {
-A a=new A(10);
+A a=new A();
 }
 }
