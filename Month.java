@@ -1,80 +1,78 @@
-import java.io.*;
 import java.util.*;
-class Test
+class Month
 {
-public static void main(String args[])
+public static void displayDay(int n)
 {
-Scanner sc=new Scanner(System.in);
-int var=sc.nextInt();
-System.out.println(Test.printMonth(var));
-}
-public static String printMonth(int monthno)
-{
-String month;
-switch(monthno)
+switch(n)
 {
 case 0:
 {
-month="JANUARY";
+System.out.println("JANUARY");
      break;
 }
 case 1:
 {
-month="FEBRUARY";
+System.out.println("FEBRUARY");
      break;
 }
 case 2:
 {
-month="MARCH";
+System.out.println("MARCH");
      break;
 }
 case 3:
-{
-month="APRIL";
+{                                                                                                                                        
+System.out.println("APRIL");
      break;
 }
 case 4:
 {
-month="MAY";
+System.out.println("MAY");
      break;
 }
 case 5:
 {
-month="JUNE";
+System.out.println("JUNE");
      break;
 }
 case 6:
 {
-month="JULY";
+System.out.println("JULY");
      break;
 }
 case 7:
 {
-month="AUGUST";
+System.out.println("AUGUST");
      break;
 }
 case 8:
 {
-month="SEPTEMBER";
+System.out.println("SEPTEMBER");
      break;
 }
 case 9:
 {
-month="OCTOBER";
+System.out.println("OCTOBER");
      break;
 }
 case 10:
 {
-month="NOVEMBER";
+System.out.println("NOVEMBER");
      break;
 }
 case 11:
 {
-month="DECEMBER";
+System.out.println("DECEMBER");
      break;
 }
-default:month="INVALID";
+default:System.out.println("INVALID");
 }
-return month;
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int dn;
+dn=sc.nextInt();
+displayDay(dn);
 }
 }
