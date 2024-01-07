@@ -1,16 +1,21 @@
-//with recurssion
+//without recurssion
 import java.util.Scanner;
 class Demo
 {
 public long calculateFactorial(int n)
 {
+long res=1;
 if(n==0)
 return 1;
 else
-return n*calculateFactorial(n-1);
+{
+for(int i=1;i<=n;i++)
+res=res*i;
+return res;
 }
 }
-class Test2
+}
+class Rec
 {
 public static void main(String args[])
 {
