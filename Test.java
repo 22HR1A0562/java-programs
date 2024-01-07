@@ -1,19 +1,27 @@
-class A
+class Animal
 {
-A()
+public void eat()
 {
-System.out.println("Hello a from default constructor");
+System.out.println("I can eat");
 }
-A(int x)
+}
+class Dog extends Animal
 {
-this();
-System.out.println(x);
+public void eat()
+{
+System.out.println("I eat dog food");
+}
+public void bark()
+{
+System.out.println("I can bark");
 }
 }
 class Test
 {
 public static void main(String args[])
 {
-A a=new A(10);
+Dog d=new Dog();
+d.eat();
+d.bark();
 }
 }

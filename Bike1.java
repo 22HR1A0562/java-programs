@@ -1,11 +1,13 @@
 class Bike1
 {
-Bike1(int x)
+final int speedlimit=90;
+void run()
 {
-System.out.println("Bike is created"+x);
+//speedlimit=400;
+System.out.println(speedlimit);
 }
-public static void main(String args[])
+public static void main(String[]args)
 {
-Bike1 b=new Bike1(100);
-}
-} 
+Bike1 b=new Bike1();
+b.run();
+}}
